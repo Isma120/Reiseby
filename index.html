@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="ikoner/css/brands.css" rel="stylesheet">
+    <link href="ikoner/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Forside modern shop</title>
+  </head>
+  <body>
+    <header class="center">
+      <div class="header-content">
+        <!-- Søkefelt til venstre -->
+        <form class="search-form">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+
+        <!-- Navigasjonsmeny i midten -->
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="#popular-products">Produkter</a></li>
+            <li><a href="index.html" class="logo">Logo</a></li>
+            <li><a href="#popular-categories">Kategorier</a></li>
+            <li><a href="#footer-contact">Kontakt oss</a></li>
+          </ul>
+        </nav>
+
+        <!-- Ikoner til høyre -->
+        <ul class="icons">
+          <li><i class="fa-regular fa-user"></i></li>
+          <li><i class="fa-regular fa-heart"></i></li>
+          <li>
+            <button
+              id="cart-icon"
+              onclick="window.location.href='checkout.html'"
+              aria-label="Gå til Checkout"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--banner styling-->
+    <section class="banner-carousel center">
+      <h1 class="sr-only">banner-carousel</h1>
+      <div class="banner-wrapper">
+        <section class="banner" id="banner-1">
+          <img src="bilder/1.jpg" alt="nature" />
+          <!-- henter fra:https://picsum.photos/id/121/info-->
+          <article class="text-overlay">
+            <h2>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur.
+            </h2>
+            <h4>
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit, sed quia non numquam eius modi
+              tempora incidunt ut labore et dolore magnam aliquam quaerat
+              voluptatem.
+            </h4>
+            <p>Excepteur sint occaecat cupidatat non proident</p>
+            <button type="button">Les mer</button>
+          </article>
+        </section>
+        <section class="banner" id="banner-2">
+          <img src="bilder/2.jpg" alt="technology" />
+          <!-- henter fra:https://picsum.photos/id/119/info-->
+          <article class="text-overlay">
+            <h2>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur.
+            </h2>
+            <h4>
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit, sed quia non numquam eius modi
+              tempora incidunt ut labore et dolore magnam aliquam quaerat
+              voluptatem.
+            </h4>
+            <p>Excepteur sint occaecat cupidatat non proident</p>
+            <button type="button">Les mer</button>
+          </article>
+        </section>
+        <section class="banner" id="banner-3">
+          <img src="bilder/3.jpg" alt="city" />
+          <!-- henter fra:https://picsum.photos/id/61/info-->
+          <article class="text-overlay">
+            <h2>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur.
+            </h2>
+            <h4>
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit, sed quia non numquam eius modi
+              tempora incidunt ut labore et dolore magnam aliquam quaerat
+              voluptatem.
+            </h4>
+            <p>Excepteur sint occaecat cupidatat non proident</p>
+            <button type="button">Les mer</button>
+          </article>
+        </section>
+      </div>
+      <button class="carousel-control prev" aria-label="Previous">
+        &#10094;
+      </button>
+      <button class="carousel-control next" aria-label="Next">&#10095;</button>
+    </section>
+
+    <main>
+      <!--Våre mest populære produkter-->
+      <section id="popular-products" class="popular-products">
+        <h2>Våre mest populære produkter</h2>
+        <p>Oppdag de beste produktene vi har å tilby</p>
+        <button class="new-product-button">New Product</button>
+        <button class="special-price-button">Special Price</button>
+        <button class="best-seller-button">Best Seller</button>
+      </section>
+
+      <!-- Bilder *6 -->
+      <section class="bilder">
+        <a href="product.html">
+          <article>
+            <img src="bilder/4.jpg" alt="watch" />
+            <!-- henter fra:https://picsum.photos/id/175/info-->
+            <p>Product name</p>
+            <p>Kr 1999</p>
+            <span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </span>
+          </article>
+        </a>
+        <!--p2-->
+        <a href="product.html">
+          <article>
+            <img src="bilder/4.jpg" alt="watch" />
+            <!-- henter fra:https://picsum.photos/id/175/info-->
+            <p>Product name</p>
+            <p>Kr 1999</p>
+            <span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </span>
+          </article>
+        </a>
+        <!--p3-->
+        <a href="product.html">
+          <article>
+            <img src="bilder/4.jpg" alt="watch" />
+            <!-- henter fra:https://picsum.photos/id/175/info-->
+            <p>Product name</p>
+            <p>Kr 1999</p>
+            <span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </span>
+          </article>
+        </a>
+        <!--p4-->
+        <a href="product.html">
+          <article>
+            <img src="bilder/4.jpg" alt="watch" />
+            <!-- henter fra:https://picsum.photos/id/175/info-->
+            <p>Product name</p>
+            <p>Kr 1999</p>
+            <span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </span>
+          </article>
+        </a>
+        <!--p5-->
+        <a href="product.html">
+          <article>
+            <img src="bilder/4.jpg" alt="watch" />
+            <!-- henter fra:https://picsum.photos/id/175/info-->
+            <p>Product name</p>
+            <p>Kr 1999</p>
+            <span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </span>
+          </article>
+        </a>
+        <!--p6-->
+        <a href="product.html">
+          <article>
+            <img src="bilder/4.jpg" alt="watch" />
+            <!-- henter fra:https://picsum.photos/id/175/info-->
+            <p>Product name</p>
+            <p>Kr 1999</p>
+            <span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </span>
+          </article>
+        </a>
+      </section>
+
+      <!-- Categories delen -->
+      <section class="categories" id="popular-categories">
+
+        <article class="category-header">
+          <h2>Våre mest populære kategorier</h2>
+        </article>
+        <!--c1-->
+        <article class="category-item">
+          <img src="bilder/c.1.jpg" alt="belt" />
+          <!-- henter fra:https://picsum.photos/id/36/info-->
+          <p>Category 1</p>
+        </article>
+        <!--c2-->
+        <article class="category-item">
+          <img src="bilder/c.2.jpg" alt="camera" />
+          <!-- henter fra:https://picsum.photos/id/91/info-->
+          <p>Category 2</p>
+        </article>
+        <!--c3-->
+        <article class="category-item">
+          <img src="bilder/c.3.jpg" alt="wheel" />
+          <!-- henter fra:https://picsum.photos/id/99/info-->
+          <p>Category 3</p>
+        </article>
+        <!--c4-->
+        <article class="category-item">
+          <img src="bilder/c.4.jpg" alt="iron" />
+          <!-- henter fra:https://picsum.photos/id/192/info-->
+          <p>Category 4</p>
+        </article>
+        <!--c5-->
+        <article class="category-item">
+          <img src="bilder/c.5.jpg" alt="line" />
+          <!-- henter fra:https://picsum.photos/id/58/info-->
+          <p>Category 5</p>
+        </article>
+      </section>
+
+      <!--Anmeldelser 5*-->
+      <section class="reviews">
+        <h2>Anmeldelser</h2>
+        <!--a1-->
+        <article class="review-item">
+          <img src="bilder/a.1.jpg" alt="puppy" />
+          <!-- henter fra:https://picsum.photos/id/238/info-->
+          <p class="name">Rober Labrador</p>
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </span>
+          <p class="review-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur."
+          </p>
+        </article>
+        <!--a2-->
+        <article class="review-item">
+          <img src="bilder/a.1.jpg" alt="puppy" />
+          <!-- henter fra:https://picsum.photos/id/238/info-->
+          <p class="name">Rober Labrador</p>
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </span>
+          <p class="review-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur."
+          </p>
+        </article>
+        <!--a3-->
+        <article class="review-item">
+          <img src="bilder/a.1.jpg" alt="puppy" />
+          <!-- henter fra:https://picsum.photos/id/238/info-->
+          <p class="name">Rober Labrador</p>
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </span>
+          <p class="review-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur."
+          </p>
+        </article>
+        <!--a4-->
+        <article class="review-item">
+          <img src="bilder/a.1.jpg" alt="puppy" />
+          <!-- henter fra:https://picsum.photos/id/238/info-->
+          <p class="name">Rober Labrador</p>
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </span>
+          <p class="review-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur."
+          </p>
+        </article>
+        <!--a5-->
+        <article class="review-item">
+          <img src="bilder/a.1.jpg" alt="puppy" />
+          <!-- henter fra:https://picsum.photos/id/238/info-->
+          <p class="name">Rober Labrador</p>
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </span>
+          <p class="review-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur."
+          </p>
+        </article>
+      </section>
+    </main>
+    <hr />
+    <footer id="footer-contact">
+      <section>
+        <article>
+          <h2>Logo</h2>
+          <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit, sed quia non numquam eius modi tempora
+            incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+          </p>
+        </article>
+
+        <article>
+          <h3>Kontakt</h3>
+          <i class="fa-solid fa-location-dot"></i>
+          <i class="fa-solid fa-phone"></i>
+          <i class="fa-regular fa-envelope"></i>
+          <i class="fa-solid fa-clock"></i>
+        </article>
+
+        <article>
+          <h3>Snarveier</h3>
+          <ul>
+            <li><a href="#">Produkter</a></li>
+            <li><a href="#">Kategorier</a></li>
+            <li><a href="#footer-contact">Kontakt oss</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Sosiale Medier</h3>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://www.pinterest.com" target="_blank"
+            ><i class="fab fa-pinterest"></i
+          ></a>
+        </article>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

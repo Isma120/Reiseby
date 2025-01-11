@@ -1,0 +1,147 @@
+@import "./colors";
+@import "./layout.scss";
+@import "./index";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // font-family: $mainFont;
+}
+/*
+  Global
+*/
+
+$PX_SIZE: 16;
+
+button {
+  all: unset;
+}
+
+ul {
+  all: unset;
+}
+
+a {
+  all: unset;
+}
+
+ul li,
+ol li {
+  all: unset;
+}
+
+input {
+  all: unset;
+}
+
+@function pxToRem($px_size) {
+  @return #{calc($px_size / $PX_SIZE)}rem;
+}
+
+@function calcFontSizeInRem($font_size_px) {
+  @return #{calc($font_size_px / $PX_SIZE)}rem;
+}
+
+@function calcLineHeight($font_size_px, $line_height_px) {
+  @return calc($line_height_px / $font_size_px);
+}
+
+
+header {
+  padding-top: pxToRem(15);
+  div.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    form.search-form {
+      border: pxToRem(1) solid black;
+      border-radius: pxToRem(15);
+      width: fit-content;
+      input {
+        padding-top: pxToRem(5);
+        padding-bottom: pxToRem(5);
+        padding-left: pxToRem(15);
+      }
+      button {
+        margin: pxToRem(5) pxToRem(5) pxToRem(5) 0;
+      }
+    }
+
+    nav {
+      ul {
+        display: flex;
+        gap: pxToRem(30);
+        align-items: center;
+        li {
+          a {
+            font-size: calcFontSizeInRem(20);
+            &.logo {
+              font-size: calcFontSizeInRem(40);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.icons {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  align-items: right;
+  li {
+    margin-left: 15px;
+  }
+  i {
+    font-size: 20px;
+    color: $color_1;
+    cursor: pointer;
+  }
+}
+
+
+.center {
+  width: 82%;
+  max-width: pxToRem(1716.48);
+  margin: auto;
+}
+/*
+  Header
+*/
+
+/*
+  Main
+*/
+body {
+  // background-color: $white;
+  background: white;
+  height: 100vh;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/*
+ ???
+*/
+
+.banner-carousel {
+  .banner-wrapper {
+    display: flex;
+    width: 100%;
+    transition: transform 0.8s ease;
+    section.banner {
+      object-fit: cover;
+      width: 100%;
+      aspect-ratio: 16/6;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .carousel-control {
+    border-radius: 50%;
+  }
+}

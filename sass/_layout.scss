@@ -1,0 +1,89 @@
+@import "./colors";
+
+
+
+
+#cart-icon {
+  background-color: $background-color_2;
+  border: none;
+  cursor: pointer;
+  i {
+    font-size: 20px;
+    color: $color_1;
+  }
+}
+.logo {
+  font-size: large;
+  text-decoration: solid;
+}
+.banner-carousel {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  position: relative;
+
+  .banner {
+    min-width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    // width: 80vw;
+    // height: 80vh;
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: $background-color_3;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: $color_3;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 10;
+  display: block;
+}
+.carousel-control.prev {
+  left: 10px;
+}
+.carousel-control.next {
+  right: 10px;
+}
+.text-overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: $color_4;
+  background-color: $background-color_4;
+  padding: 15px;
+  max-width: 80%;
+  text-align: left;
+
+  p {
+    color: rgb(131, 131, 158);
+  }
+
+}
+
+h4 {
+  margin: 0;
+}
+p {
+  margin: 10px 0 0;
+}
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: $background-color_5;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $background-color_6;
+  }
+}

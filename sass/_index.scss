@@ -1,0 +1,145 @@
+.Våre-mest-populære-produkter {
+  text-align: center;
+}
+.bilder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  article {
+    background-color: $background-color_7;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  p {
+    margin: 5px 0;
+  }
+  span {
+    display: block;
+    margin-top: 5px;
+  }
+}
+section {
+  margin: 30px 0;
+  article {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+.popular-products {
+  text-align: center;
+  padding: 20px;
+  h2 {
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}
+button {
+  background-color: $background-color_8;
+  color: $color_4;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: $background-color_9;
+  }
+}
+.categories {
+  text-align: center;
+  padding: 40px 20px;
+}
+.category-header {
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: $color_1;
+  }
+  p {
+    font-size: 1rem;
+    color: $color_5;
+  }
+}
+.category-item {
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.reviews {
+  text-align: center;
+  padding: 40px 20px;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: $color_1;
+  }
+}
+.review-item {
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: $background-color_1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+}
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: $color_1;
+}
+.stars {
+  font-size: 1rem;
+  color: $color_6;
+  margin: 10px 0;
+  span {
+    font-size: 20px;
+  }
+}
+.review-text {
+  font-size: 0.9rem;
+  color: $color_5;
+  line-height: 1.5;
+  margin-top: 10px;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
